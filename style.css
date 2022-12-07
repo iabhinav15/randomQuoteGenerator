@@ -1,7 +1,6 @@
 .container{
   border: 15px solid green;
   background-color: lightgrey;
-  /* opacity: 1; */
   width: 500px;
   padding: 50px;
   margin: 20px;
@@ -20,14 +19,15 @@
   margin: 10px;
   text-align: center;
   margin: 15px;
-  
 }
+
 #author {
   font-size: large;
   font-weight: 300;
   text-align: center;
   margin-bottom: 30px;
 }
+
 #btn {
   background-color: #4caf50; /* Green */
   border: none;
@@ -45,3 +45,16 @@
   cursor: pointer;
 }
 
+@media only screen and (max-width: 768px){
+  .container{
+
+    width: 250px;
+
+  }
+  #btn {
+   
+    padding: 8px 15px;
+      
+  }
+  
+}
