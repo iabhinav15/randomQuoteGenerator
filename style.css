@@ -1,6 +1,7 @@
 .container{
   border: 15px solid green;
   background-color: lightgrey;
+  /* opacity: 1; */
   width: 500px;
   padding: 50px;
   margin: 20px;
