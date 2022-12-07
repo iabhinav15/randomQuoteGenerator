@@ -1,7 +1,9 @@
-.container{
+.container {
   border: 15px solid green;
   background-color: lightgrey;
-  width: 500px;
+  height: auto;
+  width: auto;
+  width: fit-content;
   padding: 50px;
   margin: 20px;
   position: absolute;
@@ -45,16 +47,14 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 768px){
-  .container{
-
-    width: 250px;
-
+@media only screen and (max-width: 767px) and (orientation:portrait) {
+  .container {
+    height: auto;
+    width: auto;
+    top: 45%;
+    left: 45%;
   }
   #btn {
-   
     padding: 8px 15px;
-      
   }
-  
 }
