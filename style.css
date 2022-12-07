@@ -1,25 +1,32 @@
-#quote {
-  margin: 0;
+.container{
+  border: 15px solid green;
+  background-color: lightgrey;
+  width: 500px;
+  padding: 50px;
+  margin: 20px;
   position: absolute;
   top: 40%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-size: xx-large;
-  font-weight: 500;
 }
 
+#quote {
+  font-size: xx-large;
+  font-weight: 500;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  margin: 15px;
+  
+}
 #author {
   font-size: large;
   font-weight: 300;
-  margin: 0;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-bottom: 30px;
 }
-
 #btn {
   background-color: #4caf50; /* Green */
   border: none;
@@ -27,16 +34,13 @@
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 20px;
-  margin: 0;
-  position: absolute;
-  top: 52%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #btn:hover {
   cursor: pointer;
 }
+
