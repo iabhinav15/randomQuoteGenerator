@@ -27,9 +27,14 @@
   margin-bottom: 30px;
 }
 
-#btn {
-  background-color: #4caf50; /* Green */
+.button{
+  display: flex;
+}
+
+#copybtn {
+  background-color: hsl(340deg 100% 32%);
   border: none;
+  box-shadow: 10px 10px black;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -38,6 +43,36 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  outline-offset: 4px;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+#copybtn:active{
+  transform: scale(0.9);
+  box-shadow: 0px 0px;
+}
+
+#copybtn:hover {
+  cursor: pointer;
+}
+
+#btn {
+  background-color: rgb(163, 0, 54);
+  border: none;
+  color: white;
+  box-shadow: 10px 10px black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  margin: auto;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+#btn:active{
+  transform: scale(0.9);
+  box-shadow: 0px 0px;
 }
 
 #btn:hover {
@@ -51,11 +86,12 @@
   }
   #btn {
     padding: 8px 15px;
+    margin-top: 10px;
   }
-}
-@media only screen and (min-width: 873px) and (orientation: landscape) {
-  .container {
-    top: 45%;
-    left: 45%;
+  #copybtn {
+    padding: 8px 15px;
+  }
+  .button{
+    display: inline-block;
   }
 }
